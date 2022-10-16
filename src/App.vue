@@ -11,7 +11,7 @@ export default {
 		return {
 			items: [
         {label: 'Home', icon: 'pi pi-fw pi-home', to: '/'},
-        {label: 'About', icon: 'pi pi-fw pi-info-circle', to: '/about'},
+        {label: 'Sobre', icon: 'pi pi-fw pi-info-circle', to: '/about'},
         {label: 'Marca', icon: 'pi pi-fw pi-flag', to: '/marca'},
         {label: 'Carro', icon: 'pi pi-fw pi-car', to: '/carro'},
         {label: 'Cor', icon: 'pi pi-fw pi-palette', to: '/cor'},

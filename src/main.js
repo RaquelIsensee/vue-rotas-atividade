@@ -13,6 +13,8 @@ import Button from 'primevue/button';
 import 'primevue/resources/themes/lara-light-indigo/theme.css';
 import 'primevue/resources/primevue.min.css';
 import 'primeicons/primeicons.css';
+import InputText from 'primevue/inputtext';
+
 
 const app = createApp(App);
 
@@ -24,5 +26,5 @@ app.component('DataTable', DataTable);
 app.component('Column', Column);
 app.component('Row', Row);
 app.component('Button', Button)
-
+app.component('InputText', InputText)
 app.mount('#app')
