@@ -11,6 +11,7 @@
     <DataTable :value="cores" sortField="id" :sortOrder="-1">
         <Column field="id" header="Id" :sortable="true" />
         <Column field="nome" header="Nome"  :sortable="true" />
+        <Column field="rgb" header="RGB"  :sortable="true" />
         <Column>
             <template #body="slotProps">
                 <Button icon="pi pi-pencil" class="p-button-raised p-button-rounded" @click="editar(slotProps.data)"/>

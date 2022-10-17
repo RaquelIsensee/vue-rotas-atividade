@@ -6,6 +6,11 @@
     <DataTable :value="carros" sortField="id" :sortOrder="-1">
         <Column field="id" header="Id" :sortable="true" />
         <Column field="nome" header="Nome"  :sortable="true" />
+        <Column field="anoFabricacao" header="Ano Fabricacao"  :sortable="true" />
+        <Column field="anoModelo" header="Ano Modelo"  :sortable="true" />
+        <Column field="preco" header="Preço"  :sortable="true" />
+        <Column field="marca.nome" header="Marca"  :sortable="true" />
+        <Column field="cor.nome" header="Cor"  :sortable="true" />
         <Column>
             <template #body="slotProps">
                 <Button icon="pi pi-pencil" class="p-button-raised p-button-rounded" @click="editar(slotProps.data)"/>
