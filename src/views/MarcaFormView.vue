@@ -3,14 +3,16 @@
     <h1>Edição de marcas</h1>
     <p>{{paramId}}</p>  
     <label for="nome">Nome:</label>
-    <input type="text" id="nome" v-model="nome" size="30" required autofocus><br/>
-    <input type="button" value="Editar" :click="editar()"/>
+    <InputText id="nome" type="text" v-model="nome" /><br/><br/>
+    <Button label="Editar" icon="pi pi-pencil" class="p-button-raised p-button-rounded" iconPos="right"  @click="editar"/>
+
 </div>
 </template>
 
 <script>
 
 import { useRoute } from 'vue-router';
+import axios from 'axios'
 
 var globalParamId = null;
 
@@ -25,8 +27,11 @@ export default{
     }),
     methods:{
         editar(marca){
-            //como atualizar o array?
+            let marcaEdit= {
+                nome: this.nome
+            }
+            axios.put(`https://carros-app-example.herokuapp.com/marca/${globalParamId}`, marcaEdit)
+        },
         }
-    }
 }
 </script>
