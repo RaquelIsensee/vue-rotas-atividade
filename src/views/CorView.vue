@@ -48,7 +48,6 @@ import axios from 'axios'
                 nome: this.nome,
                 rgb: this.rgb,
                 ativo:true
-
             }
             axios.post(`https://carros-app-example.herokuapp.com/cor`, corPost)
             this.nome = ""

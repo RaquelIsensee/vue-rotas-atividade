@@ -14,7 +14,7 @@ import 'primevue/resources/themes/lara-light-indigo/theme.css';
 import 'primevue/resources/primevue.min.css';
 import 'primeicons/primeicons.css';
 import InputText from 'primevue/inputtext';
-
+import Dropdown from 'primevue/dropdown'
 
 const app = createApp(App);
 
@@ -27,4 +27,5 @@ app.component('Column', Column);
 app.component('Row', Row);
 app.component('Button', Button)
 app.component('InputText', InputText)
+app.component('Dropdown', Dropdown)
 app.mount('#app')
